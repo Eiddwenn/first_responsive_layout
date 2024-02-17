@@ -1,0 +1,229 @@
+body {
+   box-sizing: border-box;
+   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+   padding: 0;
+   margin: 0;
+}
+
+.content {
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+/* Header */
+
+.mainHeader {
+   background-color: #1e1ec2;
+   height: 60px;
+   line-height: 60px;
+   position: relative;
+   margin-bottom: 15px;
+}
+
+.langBox {
+   position: absolute;
+   top: 50%;
+   right: -70px;
+   transform: translate(-50%, -50%);
+}
+
+.langBox div {
+   margin: 5px;
+   padding: 5px;
+   width: 30px;
+   height: 30px;
+   background-color: #ffc814;
+   text-align: center;
+   float: right;
+   font-size: 14px;
+   line-height: 30px;
+}
+
+.langBox div p {
+   margin: 0;
+}
+
+.logoTim {
+   max-width: 100px;
+}
+
+.logoTim img {
+   margin-left: 10px;
+   width: 100%;
+   vertical-align: middle;
+}
+
+/* Fine Header */
+
+.primoDesktop {
+   display: none;
+   float: left;
+}
+
+.box3 {
+   padding: 20px;
+   background-color: #106965;
+   color: #fff;
+   height: 20%;
+   margin: 0 auto;
+}
+
+.box3 h1 {
+   margin: 0;
+   margin-bottom: 10px;
+}
+
+.boxImg {
+   width: 100%;
+   padding-bottom: 20px;
+}
+
+.primo,
+.primoDesktop {
+   background-color: #7db44f;
+}
+
+.secondo {
+   background-color: #f19b38;
+}
+
+.boxImg img {
+   max-width: 548px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 90%;
+}
+
+h2 {
+   margin: 20px 0;
+   text-align: center;
+}
+
+.mainFooter {
+   background-color: #c93131;
+   height: 80px;
+   /* line-height: 60px; */
+   margin-top: 15px;
+}
+
+.mainFooter ul {
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: center;
+   gap: 1em;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   font-family: social;
+}
+
+.mainFooter ul li {
+   background-image: url("../../assets/img/sprite.png");
+   width: 54px;
+   height: 54px;
+   cursor: pointer;
+}
+
+.mainFooter ul li:hover {
+   transition: 0.8s;
+   transform: scale(1.1);
+}
+
+.mainFooter ul li:first-child:hover {
+   background-position: -54px 0;
+}
+
+.mainFooter ul li:nth-child(2) {
+   background-position: -108px 0;
+}
+
+.mainFooter ul li:nth-child(2):hover {
+   background-position: -162px 0;
+}
+
+.mainFooter ul li:nth-child(3) {
+   background-position: -216px 0;
+}
+
+.mainFooter ul li:nth-child(3):hover {
+   background-position: -270px 0;
+}
+
+.mainFooter ul li:nth-child(4) {
+   background-position: -324px 0;
+}
+
+.mainFooter ul li:nth-child(4):hover {
+   background-position: -378px 0;
+}
+
+.mainFooter ul li:last-child {
+   background-position: -432px 0;
+}
+
+.mainFooter ul li:last-child:hover {
+   background-position: -486px 0;
+}
+
+@media all and (min-width: 320px) {
+   .mainFooter ul {
+      gap: 0.5em;
+}
+}
+
+@media all and (min-width: 650px) {
+   .box3 {
+      padding: 15px;
+      margin-bottom: 15px;
+   }
+
+   .primo {
+      margin-right: 2%;
+      margin-left: 0;
+   }
+
+   .primo,
+   .secondo {
+      float: left;
+      width: 49%;
+      height: 40%;
+   }
+
+   .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+   }
+
+   .mainFooter ul {
+      gap: 1em;
+}
+}
+
+@media all and (min-width: 1024px) {
+   .primoDesktop,
+   .secondo {
+      height: 500px;
+      width: 24%;
+   }
+
+   .primoDesktop {
+      display: block;
+      margin-left: 1%;
+   }
+
+   .box3 {
+      height: 470px;
+      float: left;
+      width: 45%;
+      margin: 0 1%;
+   }
+
+   .primo {
+      display: none;
+   }
+}
